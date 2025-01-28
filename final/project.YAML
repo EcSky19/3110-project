@@ -1,0 +1,32 @@
+---
+# Members of your group.
+group:
+  - name: Noah Hursh 
+    netid: nmh72
+  - name: Michael Gaile
+    netid: mvg47
+  - name: Anthony Kim
+    netid: jk985
+  - name: Ethan Coskay
+    netid: enc33
+# Your PM.
+pm:
+  name: Andrew Kang
+  netid: ayk36 
+# Set to false if you don't want your gallery entry to be public.
+publish: false 
+# Pithy title
+title: 2048
+# OK if this is a Cornell Github link, but public gallery viewers won't be able to see it.
+git-repo: "https://github.coecis.cornell.edu/nmh72/final-project"
+# Replace the URL with your own demo video.
+demo-video-url: https://youtu.be/_jMesRETZ6k
+# Write a short, attention-grabbing description of your project.
+desc: > We decided to implement the popular game 2048. It’s played on a 4x4 grid, and each 
+move slides all tiles in one of four directions—up, down, left, or right. When two tiles 
+with the same number collide, they merge into a single tile with a value equal to their sum. 
+For example, two adjacent tiles marked "2" will combine to form a "4" tile, two "4" tiles 
+will become an "8" tile, and so forth. As the player moves, new tiles with the value "2" or 
+occasionally "4" appear randomly on the grid, adding to the challenge. The objective is to 
+keep combining tiles to reach the elusive 2048 tile, but the game can end prematurely if the 
+grid fills up with no possible moves.
