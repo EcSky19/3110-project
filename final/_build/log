@@ -1,6 +1,28 @@
-# dune init project final
+# dune build
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /Users/ethancoskay/.cache/dune/db
 # Workspace root: /Users/ethancoskay/projects/3110-project/final
 # Auto-detected concurrency: 10
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/ethancoskay/.opam/cs3110-2024sp/bin/ocamlc.opt -config > /var/folders/39/8v7z_shs5qd71d5q4_6m776w0000gn/T/dune_171c74_output
+$ (cd _build/default && /Users/ethancoskay/.opam/cs3110-2024sp/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.final_project.objs/byte -I /Users/ethancoskay/.opam/cs3110-2024sp/lib/ANSITerminal -I /Users/ethancoskay/.opam/cs3110-2024sp/lib/bytes -I /Users/ethancoskay/.opam/cs3110-2024sp/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -opaque -open Final_project -o lib/.final_project.objs/byte/final_project__Block.cmo -c -impl lib/block.ml)
+> File "lib/block.ml", line 6, characters 0-40:
+> 6 | val new_block : 'a -> int -> int -> 'a t
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> Error: Value declarations are only allowed in signatures
+[2]
+$ (cd _build/default && /Users/ethancoskay/.opam/cs3110-2024sp/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.final_project.objs/byte -I lib/.final_project.objs/native -I /Users/ethancoskay/.opam/cs3110-2024sp/lib/ANSITerminal -I /Users/ethancoskay/.opam/cs3110-2024sp/lib/bytes -I /Users/ethancoskay/.opam/cs3110-2024sp/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -opaque -open Final_project -o lib/.final_project.objs/native/final_project__Block.cmx -c -impl lib/block.ml)
+> File "lib/block.ml", line 6, characters 0-40:
+> 6 | val new_block : 'a -> int -> int -> 'a t
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> Error: Value declarations are only allowed in signatures
+[2]
